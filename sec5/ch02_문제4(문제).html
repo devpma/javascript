@@ -7,13 +7,31 @@
 </head>
 <body>
     <script>
-        // for 문을 이용해 문제4 예시의 그림을 만들어주세요
-        let result = "";
-        for(let i = 1; i < 5; i++){
-            let star = "*";
-            result = result + star;
-            document.write(result + '<br>')
-        }
+    // 문제 2: 성적 등급 매기기
+    // 문제 설명: 사용자로부터 성적을 입력받아, 해당 성적의 등급(A, B, C, D, F)을 출력하는 프로그램을 작성하세요.
+    // 조건:
+    // 90점 이상이면 A
+    // 80점 이상 90점 미만이면 B
+    // 70점 이상 80점 미만이면 C
+    // 60점 이상 70점 미만이면 D
+    // 60점 미만이면 F
+    let score = prompt("성적을 입력하세요.");
+
+    if (score >= 90) {
+        alert("A 입니다.");
+    } else if(80 <= score) {
+        alert("B 입니다.");
+    } else if(70 <= score) {
+        alert("C 입니다.");
+    } else if (60 <= score) {
+        alert("D 입니다.");
+    } else if (score < 60) {
+        alert("F 입니다.");
+    } else {
+        alert("성적을 입력하세요.");
+    }
+
+
     </script>
 </body>
 </html>

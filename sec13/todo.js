@@ -8,7 +8,7 @@ let todoArr = [];
 
 // 로컬 저장소에서 가져오
 
-// 할일 삭제하기
+// 할일 삭제하기 ... 한번에 다 삭제되는데 뭐가 문제일까 
 function handleTodoDelBtnClick(clickedId) {
     todoArr = todoArr.filter(function(aTodo){
         return aTodo.todoId !== clickedId
